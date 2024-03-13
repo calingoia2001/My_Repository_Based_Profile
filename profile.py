@@ -18,7 +18,7 @@ pc = portal.Context()
 request = pc.makeRequestRSpec()
  
 # Add a raw PC to the request.
-node = request.RawPC("my_node1")
+node = request.RawPC("my_node1_changed")
 
 # Install and execute a script that is contained in the repository.
 node.addService(pg.Execute(shell="sh", command="/local/repository/silly.sh"))
