@@ -18,7 +18,9 @@ pc = portal.Context()
 request = pc.makeRequestRSpec()
  
 # Add a raw PC to the request.
-node = request.RawPC("my_node1_changed")
+node = request.RawPC("my_node1")
+
+node.disk_image = "urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU22-64-STD
 
 # Install and execute a script that is contained in the repository.
 node.addService(pg.Execute(shell="bash", command="/local/repository/silly.sh"))
