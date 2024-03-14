@@ -18,7 +18,7 @@ pc = portal.Context()
 request = pc.makeRequestRSpec()
  
 # Add a raw PC to the request.
-node = request.RawPC("my_node1")
+node = request.RawPC("my_node1_test")
 
 node.disk_image = "urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU22-64-STD
 
