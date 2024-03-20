@@ -23,8 +23,9 @@ node = request.RawPC("my_node1_test")
 node.disk_image = "urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU22-64-STD"
 
 # Install and execute a script that is contained in the repository.
-node.addService(pg.Execute(shell="bash", command="/local/repository/silly.sh"))
-node.addService(pg.Execute(shell="bash", command="mkdir test"))
+node.addService(pg.Execute(shell="bash", command="cd /local/repository"))
+node.addService(pg.Execute(shell="bash", command="chmod +x silly.sh"))
+node.addService(pg.Execute(shell="bash", command="./silly.sh"))
 
 # Print the RSpec to the enclosing page.
 pc.printRequestRSpec(request)
