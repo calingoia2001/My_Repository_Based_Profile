@@ -47,7 +47,7 @@ link_lan.Site('undefined')
 link_lan.addInterface(iface0)
 link_lan.addInterface(iface1)
 link_lan.addInterface(iface2)
-link_lan.addInterface(iface4)
+link_lan.addInterface(iface3)
 
 # Print the RSpec to the enclosing page.
 pc.printRequestRSpec(request)
