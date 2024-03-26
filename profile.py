@@ -28,11 +28,5 @@ node2 = request.RawPC("node2_rawPC_withDocker")
 node2.hardware_type = "m400"
 node2.disk_image = "urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU22-64-STD"
 
-node3 = request.XenVM("node3_xenVM")
-node3.disk_image = "urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU22-64-STD"
-
-node4 = request.XenVM("node4_xenVM_withDocker")
-node4.disk_image = "urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU22-64-STD"
-
 # Print the RSpec to the enclosing page.
 pc.printRequestRSpec(request)
