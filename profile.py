@@ -21,16 +21,21 @@ request = pc.makeRequestRSpec()
  
 # Add a raw PC to the request.
 node1 = request.RawPC("node1_rawPC")
+node1.hardware_type = "m400"
+
 node1.disk_image = "urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU22-64-STD"
 
 node2 = request.RawPC("node2_rawPC_withDocker")
+node2.hardware_type = "m400"
 node2.disk_image = "urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU22-64-STD"
 
 node3 = request.XenVM("node3_xenVM")
+node3.hardware_type = "m400"
 node3.disk_image = "urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU22-64-STD"
 
 
 node4 = request.XenVM("node4_xenVM_withDocker")
+node4.hardware_type = "m400"
 node4.disk_image = "urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU22-64-STD"
 
 # Prit the RSpec to the enclosing page.
