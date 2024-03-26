@@ -33,12 +33,12 @@ iface1.component_id = 'eth2'
 
 node3 = request.XenVM("node3_xenVM")
 node3.disk_image = "urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU22-64-STD"
-iface2 = node3.addInterface('if1', pg.IPv4Address('192.168.1.3','255.255.255.0'))
+iface2 = node3.addInterface('if3', pg.IPv4Address('192.168.1.3','255.255.255.0'))
 iface2.component_id = 'eth3'
 
 node4 = request.XenVM("node4_xenVM_withDocker")
 node4.disk_image = "urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU22-64-STD"
-iface3 = node43.addInterface('if1', pg.IPv4Address('192.168.1.4','255.255.255.0'))
+iface3 = node4.addInterface('if4', pg.IPv4Address('192.168.1.4','255.255.255.0'))
 iface3.component_id = 'eth4'
 
 # Link lan
