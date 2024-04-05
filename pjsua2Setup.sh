@@ -1,7 +1,7 @@
 #!/bin/bash
 
 apt-get update
-apt install vim
+apt install vim -y
 tar -xvzf pjproject-2.14.1.tar.gz
 cd pjproject-2.14.1/
 ./configure CFLAGS="-fPIC"
